@@ -1,0 +1,14 @@
+{
+    "development" : {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://localhost:27017/restaurantOneToOneApp",
+        "JWTSECRET": "secret@12345",
+        "JWTEXP": "2h"
+    },
+    "production" : {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb://localhost:27017/restaurantOneToOneApp",
+        "JWTSECRET": "secret@12345",
+        "JWTEXP": "2h"
+    }
+}
