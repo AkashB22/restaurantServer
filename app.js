@@ -34,10 +34,15 @@ app.use(cors({
 }));
 app.use(passport.initialize());
 app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname + '/../restaurantClient/dist/restaurantClient/')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/api', restaurantRouter)
+app.use('/api', restaurantRouter);
+
+// app.get('*', (req, res)=>{
+//   res.sendFile(path.join(__dirname, '/../restaurantClient/dist/restaurantClient/index.html'));
+// })
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
