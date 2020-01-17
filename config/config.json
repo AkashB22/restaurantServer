@@ -1,13 +1,11 @@
 {
     "development" : {
-        "PORT": 3000,
-        "MONGODB_URI": "mongodb://localhost:27017/restaurantOneToOneApp",
+        "MONGODB_URI": "mongodb+srv://akash:Rajibalu@cluster0-6l2ig.mongodb.net/restaurantOneToOneApp?retryWrites=true&w=majority",
         "JWTSECRET": "secret@12345",
         "JWTEXP": "2h"
     },
     "production" : {
-        "PORT": 80,
-        "MONGODB_URI": "mongodb://localhost:27017/restaurantOneToOneApp",
+        "MONGODB_URI": "mongodb+srv://akash:Rajibalu@cluster0-6l2ig.mongodb.net/restaurantOneToOneApp?retryWrites=true&w=majority",
         "JWTSECRET": "secret@12345",
         "JWTEXP": "2h"
     }
